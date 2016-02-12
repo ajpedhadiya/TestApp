@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fivezero" >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/fivezero"
+            android:layout_height="@dimen/fivezero"
+            android:padding="@dimen/onefive"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/onezero"
+            android:text="Sign in"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/onetwo"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgCenterIcon"
+        android:layout_width="@dimen/fivezero"
+        android:layout_height="@dimen/fivezero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eightzero"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imgSignupWithFb"
+        android:layout_below="@+id/imgCenterIcon"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/threezero"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:layout_marginTop="@dimen/twozero"
+            android:background="@android:color/white"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/onethree" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/threezero"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:layout_marginTop="@dimen/twozero" >
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/threezero"
+                android:background="@android:color/white"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:textSize="@dimen/onethree" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/twozero"
+            android:layout_marginRight="@dimen/twozero"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSignupWithFb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:layout_above="@+id/imgSignIn"
+        android:layout_marginBottom="@dimen/twozero"
+        android:layout_marginLeft="@dimen/fourzero"
+        android:layout_marginRight="@dimen/fourzero"
+        android:layout_marginTop="@dimen/twozero"
+        android:scaleType="fitXY"
+        android:src="@drawable/signup_withfb" />
+
+    <ImageView
+        android:id="@+id/imgSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixzero"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/signup_next" />
+
+</RelativeLayout>
